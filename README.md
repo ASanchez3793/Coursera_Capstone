@@ -1,2 +1,2 @@
 # Coursera_Capstone
-Lab Week 1
+Repository for IBM Data Analytics - Coursera Capstone
