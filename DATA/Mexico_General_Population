@@ -1,0 +1,33 @@
+cve_entidad,desc_entidad,cve_municipio,Population
+1,Aguascalientes,0,1316032.0
+2,Baja California,0,3348898.0
+3,Baja California Sur,0,718384.0
+4,Campeche,0,902250.0
+5,Coahuila de Zaragoza,0,2961708.0
+6,Colima,0,715095.0
+7,Chiapas,0,5228711.0
+8,Chihuahua,0,3569479.0
+9,Ciudad de México,0,8985339.0
+10,Durango,0,1759848.0
+11,Guanajuato,0,5864777.0
+12,Guerrero,0,3542204.0
+13,Hidalgo,0,2862970.0
+14,Jalisco,0,7880539.0
+15,México,0,16225409.0
+16,Michoacán de Ocampo,0,4599104.0
+17,Morelos,0,1912211.0
+18,Nayarit,0,1188671.0
+19,Nuevo León,0,5131938.0
+20,Oaxaca,0,3976297.0
+21,Puebla,0,6183320.0
+22,Querétaro,0,2043851.0
+23,Quintana Roo,0,1505785.0
+24,San Luis Potosí,0,2723772.0
+25,Sinaloa,0,2977104.0
+26,Sonora,0,2874391.0
+27,Tabasco,0,2400967.0
+28,Tamaulipas,0,3453525.0
+29,Tlaxcala,0,1274227.0
+30,Veracruz de Ignacio de la Llave,0,8127832.0
+31,Yucatán,0,2102259.0
+32,Zacatecas,0,1581575.0
