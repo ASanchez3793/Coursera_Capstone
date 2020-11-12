@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_0a2560f9d1af415a9d7a7f4e08218f4e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0a2560f9d1af415a9d7a7f4e08218f4e" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_0a2560f9d1af415a9d7a7f4e08218f4e = L.map(
+                                  'map_0a2560f9d1af415a9d7a7f4e08218f4e',
+                                  {center: [35.6828387,139.7594549],
+                                  zoom: 11,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_425e6af5ee8f42079b363f02131aaeb4 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+        
+    
+            var circle_marker_cdb7ac0b5e3e440dae37ae0ae1cbb36d = L.circleMarker(
+                [35.6938097,139.7532163],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_70cddb4c87f844a794df8a83ef9a6020 = L.popup({maxWidth: '300'});
+
+            
+                var html_ab8fe437e4d242b3886d498c8e37b78a = $('<div id="html_ab8fe437e4d242b3886d498c8e37b78a" style="width: 100.0%; height: 100.0%;">Ward: Chiyoda Districts: 8 </div>')[0];
+                popup_70cddb4c87f844a794df8a83ef9a6020.setContent(html_ab8fe437e4d242b3886d498c8e37b78a);
+            
+
+            circle_marker_cdb7ac0b5e3e440dae37ae0ae1cbb36d.bindPopup(popup_70cddb4c87f844a794df8a83ef9a6020);
+
+            
+        
+    
+            var circle_marker_e7364f136b7e49c6a1329594df5c281b = L.circleMarker(
+                [35.666255,139.775565],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_ebfc580876bb4697aec1c224c0f7223a = L.popup({maxWidth: '300'});
+
+            
+                var html_8df7b72d02174f43be7984c2fce2f013 = $('<div id="html_8df7b72d02174f43be7984c2fce2f013" style="width: 100.0%; height: 100.0%;">Ward: Chūō Districts: 9 </div>')[0];
+                popup_ebfc580876bb4697aec1c224c0f7223a.setContent(html_8df7b72d02174f43be7984c2fce2f013);
+            
+
+            circle_marker_e7364f136b7e49c6a1329594df5c281b.bindPopup(popup_ebfc580876bb4697aec1c224c0f7223a);
+
+            
+        
+    
+            var circle_marker_e2e6880523af46e7b0a65f8da658aedc = L.circleMarker(
+                [35.6432274,139.7400553],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_e90e7522ff7d4f30864c33af87506ba5 = L.popup({maxWidth: '300'});
+
+            
+                var html_5047458cdb4049c6aca1022b17734726 = $('<div id="html_5047458cdb4049c6aca1022b17734726" style="width: 100.0%; height: 100.0%;">Ward: Minato Districts: 8 </div>')[0];
+                popup_e90e7522ff7d4f30864c33af87506ba5.setContent(html_5047458cdb4049c6aca1022b17734726);
+            
+
+            circle_marker_e2e6880523af46e7b0a65f8da658aedc.bindPopup(popup_e90e7522ff7d4f30864c33af87506ba5);
+
+            
+        
+    
+            var circle_marker_a6e7cb8df37443c19cd66e51377b0bce = L.circleMarker(
+                [35.6937632,139.7036319],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_d2a4261d247c466ba2375e069ddbef92 = L.popup({maxWidth: '300'});
+
+            
+                var html_35962599fcb44fbfbaeb4355d1ea16e8 = $('<div id="html_35962599fcb44fbfbaeb4355d1ea16e8" style="width: 100.0%; height: 100.0%;">Ward: Shinjuku Districts: 8 </div>')[0];
+                popup_d2a4261d247c466ba2375e069ddbef92.setContent(html_35962599fcb44fbfbaeb4355d1ea16e8);
+            
+
+            circle_marker_a6e7cb8df37443c19cd66e51377b0bce.bindPopup(popup_d2a4261d247c466ba2375e069ddbef92);
+
+            
+        
+    
+            var circle_marker_fea7bebf35b94da48597d0536344a414 = L.circleMarker(
+                [35.71881,139.744732],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_fab224e8f1a74a4db36a918c60fe49aa = L.popup({maxWidth: '300'});
+
+            
+                var html_dcd2f05744f24c8bab98d8901006cdd0 = $('<div id="html_dcd2f05744f24c8bab98d8901006cdd0" style="width: 100.0%; height: 100.0%;">Ward: Bunkyō Districts: 3 </div>')[0];
+                popup_fab224e8f1a74a4db36a918c60fe49aa.setContent(html_dcd2f05744f24c8bab98d8901006cdd0);
+            
+
+            circle_marker_fea7bebf35b94da48597d0536344a414.bindPopup(popup_fab224e8f1a74a4db36a918c60fe49aa);
+
+            
+        
+    
+            var circle_marker_18b7ca947553431e9cc2c54759d3ed10 = L.circleMarker(
+                [35.71745,139.790859],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_7a4add2c21694e7e829afed644bacc9d = L.popup({maxWidth: '300'});
+
+            
+                var html_6e6bf11d8f2d4834b42cbe9f06cea355 = $('<div id="html_6e6bf11d8f2d4834b42cbe9f06cea355" style="width: 100.0%; height: 100.0%;">Ward: Taitō Districts: 2 </div>')[0];
+                popup_7a4add2c21694e7e829afed644bacc9d.setContent(html_6e6bf11d8f2d4834b42cbe9f06cea355);
+            
+
+            circle_marker_18b7ca947553431e9cc2c54759d3ed10.bindPopup(popup_7a4add2c21694e7e829afed644bacc9d);
+
+            
+        
+    
+            var circle_marker_9fc58ae247c44d73bf8f034451fdcd28 = L.circleMarker(
+                [35.700429,139.805017],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_fb0d5b52e6c241efa0630ed5555e5f90 = L.popup({maxWidth: '300'});
+
+            
+                var html_a95ed5abf3914899837fd8129ef72888 = $('<div id="html_a95ed5abf3914899837fd8129ef72888" style="width: 100.0%; height: 100.0%;">Ward: Sumida Districts: 3 </div>')[0];
+                popup_fb0d5b52e6c241efa0630ed5555e5f90.setContent(html_a95ed5abf3914899837fd8129ef72888);
+            
+
+            circle_marker_9fc58ae247c44d73bf8f034451fdcd28.bindPopup(popup_fb0d5b52e6c241efa0630ed5555e5f90);
+
+            
+        
+    
+            var circle_marker_afd928ec90ff4ec492cffb8fee906ed8 = L.circleMarker(
+                [35.649154,139.81279],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_0e9a2b7abb614d53b4a059316abb9a8a = L.popup({maxWidth: '300'});
+
+            
+                var html_6ee92c7782c749cd8bb9b0bb7b4a71a7 = $('<div id="html_6ee92c7782c749cd8bb9b0bb7b4a71a7" style="width: 100.0%; height: 100.0%;">Ward: Kōtō Districts: 11 </div>')[0];
+                popup_0e9a2b7abb614d53b4a059316abb9a8a.setContent(html_6ee92c7782c749cd8bb9b0bb7b4a71a7);
+            
+
+            circle_marker_afd928ec90ff4ec492cffb8fee906ed8.bindPopup(popup_0e9a2b7abb614d53b4a059316abb9a8a);
+
+            
+        
+    
+            var circle_marker_abc1ae13ef244811a454889e42c108a9 = L.circleMarker(
+                [35.599252,139.73891],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_ba69c48d53b24eb89a02edcccad913b2 = L.popup({maxWidth: '300'});
+
+            
+                var html_cddfa384441146d49da9324cf8cf8161 = $('<div id="html_cddfa384441146d49da9324cf8cf8161" style="width: 100.0%; height: 100.0%;">Ward: Shinagawa Districts: 6 </div>')[0];
+                popup_ba69c48d53b24eb89a02edcccad913b2.setContent(html_cddfa384441146d49da9324cf8cf8161);
+            
+
+            circle_marker_abc1ae13ef244811a454889e42c108a9.bindPopup(popup_ba69c48d53b24eb89a02edcccad913b2);
+
+            
+        
+    
+            var circle_marker_13078e4d390942979c3f9c774a9bb448 = L.circleMarker(
+                [35.62125,139.688014],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_22eee43b323a4e1bbb23140880628eec = L.popup({maxWidth: '300'});
+
+            
+                var html_0863a4aa7e6b47529f827f7d07a7f381 = $('<div id="html_0863a4aa7e6b47529f827f7d07a7f381" style="width: 100.0%; height: 100.0%;">Ward: Meguro Districts: 5 </div>')[0];
+                popup_22eee43b323a4e1bbb23140880628eec.setContent(html_0863a4aa7e6b47529f827f7d07a7f381);
+            
+
+            circle_marker_13078e4d390942979c3f9c774a9bb448.bindPopup(popup_22eee43b323a4e1bbb23140880628eec);
+
+            
+        
+    
+            var circle_marker_7ef0efb7374d4c1885acc7c939e90fb6 = L.circleMarker(
+                [35.561206,139.715843],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_af9d21af0067439ebc6db24618bc9a3a = L.popup({maxWidth: '300'});
+
+            
+                var html_5326c7b1c9624c82b877e4b74febbd7e = $('<div id="html_5326c7b1c9624c82b877e4b74febbd7e" style="width: 100.0%; height: 100.0%;">Ward: OtaŌta Districts: 3 </div>')[0];
+                popup_af9d21af0067439ebc6db24618bc9a3a.setContent(html_5326c7b1c9624c82b877e4b74febbd7e);
+            
+
+            circle_marker_7ef0efb7374d4c1885acc7c939e90fb6.bindPopup(popup_af9d21af0067439ebc6db24618bc9a3a);
+
+            
+        
+    
+            var circle_marker_191a981fbdc74269beafcad830c876d7 = L.circleMarker(
+                [35.646096,139.65627],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_acb28f02410b49879bee1edfeaa2a46d = L.popup({maxWidth: '300'});
+
+            
+                var html_b7b706f5633c45af9bc95082e0740b00 = $('<div id="html_b7b706f5633c45af9bc95082e0740b00" style="width: 100.0%; height: 100.0%;">Ward: Setagaya Districts: 4 </div>')[0];
+                popup_acb28f02410b49879bee1edfeaa2a46d.setContent(html_b7b706f5633c45af9bc95082e0740b00);
+            
+
+            circle_marker_191a981fbdc74269beafcad830c876d7.bindPopup(popup_acb28f02410b49879bee1edfeaa2a46d);
+
+            
+        
+    
+            var circle_marker_f4ee9a8b595f4defba9661eb6c1f59d5 = L.circleMarker(
+                [35.6645956,139.6987107],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_8f4fc4678c7a48cb92ebebb4a2a9d434 = L.popup({maxWidth: '300'});
+
+            
+                var html_0605f0c7066044499514cd5d8e218a12 = $('<div id="html_0605f0c7066044499514cd5d8e218a12" style="width: 100.0%; height: 100.0%;">Ward: Shibuya Districts: 5 </div>')[0];
+                popup_8f4fc4678c7a48cb92ebebb4a2a9d434.setContent(html_0605f0c7066044499514cd5d8e218a12);
+            
+
+            circle_marker_f4ee9a8b595f4defba9661eb6c1f59d5.bindPopup(popup_8f4fc4678c7a48cb92ebebb4a2a9d434);
+
+            
+        
+    
+            var circle_marker_2df7301583504455b6e15afce9d52e04 = L.circleMarker(
+                [35.718123,139.664468],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_e4d963fbe0794e449905e60686cb4e40 = L.popup({maxWidth: '300'});
+
+            
+                var html_152360a492dd4930b9e854d849af0eab = $('<div id="html_152360a492dd4930b9e854d849af0eab" style="width: 100.0%; height: 100.0%;">Ward: Nakano Districts: 1 </div>')[0];
+                popup_e4d963fbe0794e449905e60686cb4e40.setContent(html_152360a492dd4930b9e854d849af0eab);
+            
+
+            circle_marker_2df7301583504455b6e15afce9d52e04.bindPopup(popup_e4d963fbe0794e449905e60686cb4e40);
+
+            
+        
+    
+            var circle_marker_d75da11621844cf0abd834112d3621ec = L.circleMarker(
+                [35.6994929,139.6362876],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_5a5c9d12f39a42c59ec2449da312df63 = L.popup({maxWidth: '300'});
+
+            
+                var html_89c74b1bd6344660bd1d51f40ea49848 = $('<div id="html_89c74b1bd6344660bd1d51f40ea49848" style="width: 100.0%; height: 100.0%;">Ward: Suginami Districts: 3 </div>')[0];
+                popup_5a5c9d12f39a42c59ec2449da312df63.setContent(html_89c74b1bd6344660bd1d51f40ea49848);
+            
+
+            circle_marker_d75da11621844cf0abd834112d3621ec.bindPopup(popup_5a5c9d12f39a42c59ec2449da312df63);
+
+            
+        
+    
+            var circle_marker_7b89d81fc80041f2b090b719595df0d9 = L.circleMarker(
+                [35.736156,139.714222],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_815050fc4e724cae80713af403814322 = L.popup({maxWidth: '300'});
+
+            
+                var html_dc05f3ea68144633aa7dd870fa844d95 = $('<div id="html_dc05f3ea68144633aa7dd870fa844d95" style="width: 100.0%; height: 100.0%;">Ward: Toshima Districts: 4 </div>')[0];
+                popup_815050fc4e724cae80713af403814322.setContent(html_dc05f3ea68144633aa7dd870fa844d95);
+            
+
+            circle_marker_7b89d81fc80041f2b090b719595df0d9.bindPopup(popup_815050fc4e724cae80713af403814322);
+
+            
+        
+    
+            var circle_marker_bcce488395de416988b1ca4c998c0d68 = L.circleMarker(
+                [35.755838,139.736687],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_e4e5a253b34c4a41835b23108a8292b2 = L.popup({maxWidth: '300'});
+
+            
+                var html_788dc7a85c3a45dfac27e05f716f543c = $('<div id="html_788dc7a85c3a45dfac27e05f716f543c" style="width: 100.0%; height: 100.0%;">Ward: Kita Districts: 3 </div>')[0];
+                popup_e4e5a253b34c4a41835b23108a8292b2.setContent(html_788dc7a85c3a45dfac27e05f716f543c);
+            
+
+            circle_marker_bcce488395de416988b1ca4c998c0d68.bindPopup(popup_e4e5a253b34c4a41835b23108a8292b2);
+
+            
+        
+    
+            var circle_marker_0f471b4e917a4017a76a3a2c2a86b682 = L.circleMarker(
+                [35.737529,139.78131],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_f28f7c2d235e4067ac801aacd014bc43 = L.popup({maxWidth: '300'});
+
+            
+                var html_9ef92768da484bb386e142bbab4016f4 = $('<div id="html_9ef92768da484bb386e142bbab4016f4" style="width: 100.0%; height: 100.0%;">Ward: Arakawa Districts: 4 </div>')[0];
+                popup_f28f7c2d235e4067ac801aacd014bc43.setContent(html_9ef92768da484bb386e142bbab4016f4);
+            
+
+            circle_marker_0f471b4e917a4017a76a3a2c2a86b682.bindPopup(popup_f28f7c2d235e4067ac801aacd014bc43);
+
+            
+        
+    
+            var circle_marker_1b82fccee65f4e8c80917de6a31e7715 = L.circleMarker(
+                [35.774143,139.681209],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_736ea4d3ac9b4637acbb4c237029b85c = L.popup({maxWidth: '300'});
+
+            
+                var html_47376c6872174740a122f1b19e833739 = $('<div id="html_47376c6872174740a122f1b19e833739" style="width: 100.0%; height: 100.0%;">Ward: Itabashi Districts: 2 </div>')[0];
+                popup_736ea4d3ac9b4637acbb4c237029b85c.setContent(html_47376c6872174740a122f1b19e833739);
+            
+
+            circle_marker_1b82fccee65f4e8c80917de6a31e7715.bindPopup(popup_736ea4d3ac9b4637acbb4c237029b85c);
+
+            
+        
+    
+            var circle_marker_b8bcbc17ef874f5f96df4581ad9cdd7a = L.circleMarker(
+                [35.74836,139.638735],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_912918159c2f48708f27c3ee77dbc931 = L.popup({maxWidth: '300'});
+
+            
+                var html_24ddf3200dc84f668805b95d8614a822 = $('<div id="html_24ddf3200dc84f668805b95d8614a822" style="width: 100.0%; height: 100.0%;">Ward: Nerima Districts: 3 </div>')[0];
+                popup_912918159c2f48708f27c3ee77dbc931.setContent(html_24ddf3200dc84f668805b95d8614a822);
+            
+
+            circle_marker_b8bcbc17ef874f5f96df4581ad9cdd7a.bindPopup(popup_912918159c2f48708f27c3ee77dbc931);
+
+            
+        
+    
+            var circle_marker_80e3e124e9f145d5964bcf9282ca92ef = L.circleMarker(
+                [35.783703,139.795319],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_b9d5f01928734d0cb160fb60e9ef5cb1 = L.popup({maxWidth: '300'});
+
+            
+                var html_d0ac1586886c4b56859835c3412dc9e3 = $('<div id="html_d0ac1586886c4b56859835c3412dc9e3" style="width: 100.0%; height: 100.0%;">Ward: Adachi Districts: 3 </div>')[0];
+                popup_b9d5f01928734d0cb160fb60e9ef5cb1.setContent(html_d0ac1586886c4b56859835c3412dc9e3);
+            
+
+            circle_marker_80e3e124e9f145d5964bcf9282ca92ef.bindPopup(popup_b9d5f01928734d0cb160fb60e9ef5cb1);
+
+            
+        
+    
+            var circle_marker_4987fe42b1e14c91ac6a6eb3a2d7bb5c = L.circleMarker(
+                [35.751733,139.863816],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_44cd5310b7c44b8db00c8699344e243e = L.popup({maxWidth: '300'});
+
+            
+                var html_963ccde1e562473aae8427d071b48630 = $('<div id="html_963ccde1e562473aae8427d071b48630" style="width: 100.0%; height: 100.0%;">Ward: Katsushika Districts: 4 </div>')[0];
+                popup_44cd5310b7c44b8db00c8699344e243e.setContent(html_963ccde1e562473aae8427d071b48630);
+            
+
+            circle_marker_4987fe42b1e14c91ac6a6eb3a2d7bb5c.bindPopup(popup_44cd5310b7c44b8db00c8699344e243e);
+
+            
+        
+    
+            var circle_marker_385ec38c58f54809836465c5e4e6b02d = L.circleMarker(
+                [35.678278,139.871091],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_0a2560f9d1af415a9d7a7f4e08218f4e);
+            
+    
+            var popup_dc5f1f952ea7410eb56f5db8a0097254 = L.popup({maxWidth: '300'});
+
+            
+                var html_555d990878f34a5e99d9bc10ccf25ed1 = $('<div id="html_555d990878f34a5e99d9bc10ccf25ed1" style="width: 100.0%; height: 100.0%;">Ward: Edogawa Districts: 2 </div>')[0];
+                popup_dc5f1f952ea7410eb56f5db8a0097254.setContent(html_555d990878f34a5e99d9bc10ccf25ed1);
+            
+
+            circle_marker_385ec38c58f54809836465c5e4e6b02d.bindPopup(popup_dc5f1f952ea7410eb56f5db8a0097254);
+
+            
+        
+</script>
